@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 admins = [2116186052, 1349414481, 1131940207, 5050639301]
 TOKEN = os.getenv("token")
-bot = telebot.TeleBot(Ban, parse_mode="HTML")
+bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
 
 
 def read_students_from_file():
